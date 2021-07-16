@@ -38,7 +38,7 @@
                     </ol>
                 </nav>
 
-                <h2 style="color: white;">Margo City</h2>
+                <h2 style="color: white;" class="text-capitalize"><?= $wisata[0]['nama'] ?></h2>
                 <div class="card">
                     <div class="card-header bg-primary text-white">
                         <h4>Galeri Foto</h4>
@@ -86,7 +86,7 @@
                                 <h4>Deskripsi Lokasi</h4>
                             </div>
                             <div class="card-body">
-                                <p style="text-align: justify;">Mall ini merupakan kompleks perbelanjaan ramai yang menyediakan beragam toko, makanan & hiburan, termasuk gelanggang seluncur es. Tak hanya itu, di mall ini juga terdapat toko gaya busana terkini, atau gadget terkini, dan masih banyak lagi hanya di Margo City.</p>
+                                <p style="text-align: justify;"><?= $wisata[0]['deskripsi'] ?></p>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -114,7 +114,7 @@
                                         </style>
                                     </div>
                                 </div>
-                                <p style="text-align: center;">Jln. Raya Sawangan No.1, Rangkap Jaya kec.Pancoran Mas, Kota Depok, Jawa Barat 16435</p>
+                                <p style="text-align: center;"><?= $wisata[0]['alamat'] ?></p>
                             </div>
                         </div>
                     </div>

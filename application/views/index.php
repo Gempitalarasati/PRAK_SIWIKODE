@@ -31,7 +31,7 @@
 
         <div class="row mt-5">
             <?php foreach ($wisatas as $wisata) { ?>
-                <div class="col-md-4">
+                <div class="col-md-4 mb-4">
                     <div class="card shadow">
                         <div class="card-header">
                             <h5 class="text-center"><?= $wisata->nama ?></h5>
@@ -42,7 +42,7 @@
                             </div>
 
                             <div class="deskripsi">
-                                <p class="pt-2 text-center font-weight-bold"><?= $wisata->deskripsi  ?>.</p>
+                                <p class="pt-2 text-center font-weight-bold"><?= substr($wisata->deskripsi, 0, 85)  ?>.</p>
                                 <a href="<?= base_url('Welcome/detail/' . $wisata->id) ?>" class="btn btn-primary col-md-12">Detail</a>
                             </div>
                         </div>
