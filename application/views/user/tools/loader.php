@@ -16,7 +16,7 @@
                         <circle class="st4" cx="475.4" cy="910" r="65"></circle>
                     </g>
                 </svg>  -->
-             <img src="<?= base_url() ?>assets/img/gempita.jpeg" class="navbar-logo bordered-top" alt="">
+             <img src="<?= base_url() ?>assets/img/depok.jpg" class="navbar-logo bordered-top" alt="">
          </div>
      </div>
  </div>
