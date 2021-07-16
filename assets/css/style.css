@@ -1,0 +1,86 @@
+.padding-card {
+    padding-left: 1.5rem;
+}
+
+.img-wisata {
+    max-width: 100px;
+}
+
+.card-wisata {
+    width: 20rem;
+}
+
+.card-wisata1 {
+    width: 22rem;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+}
+
+fieldset.scheduler-border {
+    border: 1px groove #ddd !important;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+.form-daftar-seminar {
+    border-style: solid;
+    border-width: 3px;
+    padding: 0 1.4em 1.4em 1.4em !important;
+    margin: 0 0 1.5em 0 !important;
+    -webkit-box-shadow: 0px 0px 0px 0px #000;
+    box-shadow: 0px 0px 0px 0px #000;
+}
+
+.legend-daftar-seminar {
+    float: unset;
+    width: unset;
+    text-align: left !important;
+}
+
+@media only screen and (max-width: 1024px) {
+    .card-wisata {
+        width: 18rem;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 834px) {
+    .card-wisata {
+        width: 14rem;
+    }
+}
+
+/* .nav-item {
+    background: rgb(185, 184, 184);
+    color: black;
+    max-width: 50;
+    
+} */
+
+.center {
+    background-color: rgb(56, 56, 56);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    max-width: 50;
+}
+
+.text-center {
+    color: rgb(214, 218, 219);
+    max-width: 50cm;
+}
+
+.nav-link {
+    color :rgb(253, 255, 255)
+}
+
+.title {
+    max-width: 50;
+}

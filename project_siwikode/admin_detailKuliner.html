@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SIWIKODE</title>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+
+<body style="background-repeat: no-repeat; background-size: cover;" background="assets/img/bg.jpeg">
+    <!-- Start Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-primary">
+        <a href="index.html" class="navbar-brand text-white"><b>SIWIKODE</b></a>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarCollapse" style="padding: 0 70px 0 70px;">
+            <div class="navbar-nav">
+                <a href="index.html" class="nav-item nav-link text-white">Home</a>
+                <a href="wisata_rekreasi.html" class="nav-item nav-link text-white">Wisata Rekreasi</a>
+                <a href="wisata_kuliner.html" class="nav-item nav-link text-white">Wisata Kuliner</a>
+                <a href="team.html" class="nav-item nav-link text-white">Team</a>
+            </div>
+            <div class="navbar-nav ml-auto">
+                <li class="dropdown">
+                    <a class="nav-item nav-link text-white dropdown-toggle" href="#" id="navbarDropdownMenuLink"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Daftar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <a class="dropdown-item" href="registrasi_rekreasi.html">Daftar Wisata Rekreasi</a>
+                        <a class="dropdown-item" href="registrasi_kuliner.html">Daftar Wisata Kuliner</a>
+                    </div>
+                </li>
+                <a href="login.html" class="nav-item nav-link text-white">Masuk</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Start Jumbotron -->
+    <div class="jumbotron jumbotron-fluid">
+        <marquee>
+            <div class="container">
+                <h1 class="text-center">Sistem Informasi Wisata Kota Depok - SIWIKODE</h1>
+            </div>
+        </marquee>
+    </div>
+
+    <!-- Start Main -->
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb d-flex justify-content-end">
+                        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+                        <li class="breadcrumb-item">Detail</li>
+                        <li class="breadcrumb-item" aria-current="page">Detail Wisata Kuliner</li>
+                    </ol>
+                </nav>
+                <fieldset class="form-daftar-seminar" style="color: white;">
+                    <legend class="legend-daftar-seminar mb-md-4">Form Detail Tempat Wisata Kuliner</legend>
+                    <div class="row">
+                        <div class="col-md-12 mt-2 mb-3 text-center">
+                            <img src="assets/img/img/nadya (2).jpeg" alt=""
+                                style="width: 250px; height:250px; object-fit: cover;">
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Nama Tempat Wisata :&nbsp;</label>
+                                <input type="text" id="tmpt_wisata" class="form-control"
+                                    placeholder="Masukkan nama tempat wisata" value="Nadya" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Jenis Wisata :&nbsp;</label>
+                                <select id="jenis_wisata" class="form-control" disabled>
+                                    <option>Pilih jenis wisata</option>
+                                    <option selected>Rumah Makan Tradisional</option>
+                                    <option>Makanan Luar Negeri</option>
+                                    <option>Kue</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Deskripsi Wisata :&nbsp; </label>
+                                <textarea name="" id="deskripsi_wisata" class="form-control" rows="3"
+                                    placeholder="Masukkan deskripsi wisata" disabled>Rumah makan nadya menyediakan makanan tradisional yang sangat enak</textarea>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Kontak Person :&nbsp;</label>
+                                <input type="text" id="kontak_person" class="form-control"
+                                    placeholder="Masukkan kontak person" value="Irfan" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>No. HP/ Telpon :&nbsp;</label>
+                                <input type="number" id="no_hp" class="form-control" placeholder="Masukkan No HP"
+                                    value="081313131319" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div class="form-group">
+                                <label>Email :&nbsp;</label>
+                                <input type="email" id="email" class="form-control"
+                                    placeholder="Masukkan Email dengan benar" value="irfan@gmail.com" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Alamat Web :&nbsp;</label>
+                                <input type="text" id="alamat_web" class="form-control" placeholder="http://"
+                                    value="http://nadya.com" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="form-group">
+                                <label>Alamat Lengkap :&nbsp;</label>
+                                <input type="text" id="alamat_lengkap" class="form-control"
+                                    placeholder="Masukkan alamat lengkap" value="jalan depok margonda" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Latitude :&nbsp;</label>
+                                <input type="text" id="latitude" class="form-control" placeholder="-6.3141177917730165"
+                                    value="-6.3141177917730165" disabled>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>Longitude :&nbsp;</label>
+                                <input type="text" id="longitude" class="form-control" placeholder="106.88425734519498"
+                                    value="106.88425734519498" disabled>
+                            </div>
+                        </div>
+                    </div>
+                </fieldset>
+            </div>
+        </div>
+    </div>
+
+    <!-- Start Footer -->
+    <footer class="footer bg-primary">
+        <div class="container text-center">
+            <span class="text-white font-weight-bold">Develop By Mahasiswa @STT-NF 2020</span>
+        </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
