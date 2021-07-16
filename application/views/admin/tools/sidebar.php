@@ -6,7 +6,7 @@
         <ul class="navbar-nav theme-brand flex-row  text-center">
             <li class="nav-item theme-logo">
                 <a href="<?= base_url('Admin') ?>">
-                    <img style="border-radius: 10px" src="<?= base_url() ?>assets/img/gempita.jpeg" class="navbar-logo" alt="logo">
+                    <img src="<?= base_url() ?>assets/img/depok.jpg" class="navbar-logo img-fluid" style="border-radius: 50px;" alt="logo">
                 </a>
             </li>
             <li class="nav-item theme-text">

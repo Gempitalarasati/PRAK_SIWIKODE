@@ -30,22 +30,22 @@
                             <div class="table-responsive">
                                 <a href="<?= base_url('Admin/inputJenisWisata') ?>" class="btn btn-primary mt-3 mb-4">Tambah</a>
                                 <?php $no = 1; ?>
-                                <table class="table table-hover non-hover">
+                                <table class="table table-hover">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
+                                            <th class="text-center">No</th>
                                             <th>Nama Jenis Wisata</th>
-                                            <th>Action</th>
+                                            <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <?php foreach ($jenis_wisata as $select_jenis_wisata) { ?>
                                             <tr>
-                                                <td><?= $no++ ?></td>
+                                                <td width="30" class="text-center"><?= $no++ ?></td>
                                                 <td><?= $select_jenis_wisata->nama ?></td>
-                                                <td>
-                                                    <a href="<?= base_url('Admin/deleteJenisWisata/' . $select_jenis_wisata->id) ?>" class="btn btn-danger">Delete</a>|
+                                                <td width="250" class="text-center">
+                                                    <a href="<?= base_url('Admin/deleteJenisWisata/' . $select_jenis_wisata->id) ?>" class="btn btn-danger">Delete</a>
                                                     <a href="<?= base_url('Admin/editJenisWisata/' . $select_jenis_wisata->id) ?>" class="btn btn-primary">Edit</a>
                                                 </td>
                                             </tr>

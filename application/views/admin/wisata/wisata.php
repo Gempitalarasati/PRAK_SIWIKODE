@@ -32,41 +32,41 @@
                                 <table class="table table-hover non-hover">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
+                                            <th class="text-center">No</th>
+                                            <th class="text-center">Foto</th>
                                             <th>Nama Wisata</th>
-                                            <th>Deskripsi</th>
+                                            <!-- <th>Deskripsi</th> -->
                                             <th>Jenis Wisata</th>
-                                            <th>fasilitas</th>
-                                            <th>Bintang</th>
-                                            <th>Kontak</th>
-                                            <th>Alamat</th>
-                                            <th>Latlong</th>
+                                            <!-- <th>fasilitas</th> -->
+                                            <th class="text-center">Bintang</th>
+                                            <!-- <th>Kontak</th> -->
+                                            <!-- <th>Alamat</th> -->
+                                            <!-- <th>Latlong</th> -->
                                             <th>Email</th>
-                                            <th>Web</th>
-                                            <th>Jenis Kuliner</th>
-                                            <th>Foto</th>
-                                            <th>Action</th>
+                                            <!-- <th>Web</th> -->
+                                            <!-- <th>Jenis Kuliner</th> -->
+                                            <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <?php foreach ($wisatas as $wisata) { ?>
                                             <tr>
-                                                <td><?= $no++ ?></td>
+                                                <td width="30" class="text-center"><?= $no++ ?></td>
+                                                <td width="100" class="text-center"><img src="<?= base_url() ?>upload/<?= $wisata->foto ?>" class="img-fluid" alt=""></td>
                                                 <td><?= $wisata->nama ?></td>
-                                                <td><?= $wisata->deskripsi ?></td>
+                                                <!-- <td><?= $wisata->deskripsi ?></td> -->
                                                 <td><?= $wisata->jenis_wisata ?></td>
-                                                <td><?= $wisata->fasilitas ?></td>
-                                                <td><?= $wisata->bintang ?></td>
-                                                <td><?= $wisata->kontak ?></td>
-                                                <td><?= $wisata->alamat ?></td>
-                                                <td><?= $wisata->latlong ?></td>
+                                                <!-- <td><?= $wisata->fasilitas ?></td> -->
+                                                <td class="text-center"><?= $wisata->bintang ?></td>
+                                                <!-- <td><?= $wisata->kontak ?></td> -->
+                                                <!-- <td><?= $wisata->alamat ?></td> -->
+                                                <!-- <td><?= $wisata->latlong ?></td> -->
                                                 <td><?= $wisata->email ?></td>
-                                                <td><?= $wisata->web ?></td>
-                                                <td><?= $wisata->jenis_kuliner ?></td>
-                                                <td><img src="<?= base_url() ?>upload/<?= $wisata->foto ?>" alt=""></td>
-                                                <td>
-                                                    <a href="<?= base_url('Admin/deleteWisata/' . $wisata->id) ?>" class="btn btn-danger">Delete</a>|
+                                                <!-- <td><?= $wisata->web ?></td> -->
+                                                <!-- <td><?= $wisata->jenis_kuliner ?></td> -->
+                                                <td width="250" class="text-center">
+                                                    <a href="<?= base_url('Admin/deleteWisata/' . $wisata->id) ?>" class="btn btn-danger">Delete</a>
                                                     <a href="<?= base_url('Admin/editWisata/' . $wisata->id) ?>" class="btn btn-primary">Edit</a>
                                                 </td>
                                             </tr>

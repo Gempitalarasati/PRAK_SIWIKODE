@@ -33,19 +33,19 @@
                                 <table class="table table-hover non-hover">
                                     <thead>
                                         <tr>
-                                            <th>No</th>
+                                            <th class="text-center">No</th>
                                             <th>Nama Jenis Kuliner</th>
-                                            <th>Action</th>
+                                            <th class="text-center">Action</th>
                                         </tr>
                                     </thead>
 
                                     <tbody>
                                         <?php foreach ($jenis_kuliner as $select_jenis_kuliner) { ?>
                                             <tr>
-                                                <td><?= $no++ ?></td>
+                                                <td width="30" class="text-center"><?= $no++ ?></td>
                                                 <td><?= $select_jenis_kuliner->nama ?></td>
-                                                <td>
-                                                    <a href="<?= base_url('Admin/deleteJenisKuliner/' . $select_jenis_kuliner->id) ?>" class="btn btn-danger">Delete</a>|
+                                                <td width="250" class="text-center">
+                                                    <a href="<?= base_url('Admin/deleteJenisKuliner/' . $select_jenis_kuliner->id) ?>" class="btn btn-danger">Delete</a>
                                                     <a href="<?= base_url('Admin/editJenisKuliner/' . $select_jenis_kuliner->id) ?>" class="btn btn-primary">Edit</a>
                                                 </td>
                                             </tr>
